@@ -1,0 +1,21 @@
+# eclipse
+**/*.classpath
+**/*.project
+**/.settings*
+
+# IDEA
+**/*.iml
+**/.idea*
+
+# java
+**/*.jar
+**/target/*
+
+# log
+**/log/*
+
+# FE & node
+**/build/*
+**/node_modules/*
+**/css/maps/*
+

@@ -1,4 +1,4 @@
-package cn.tanlw.db.lastInsertId.config;
+package cn.tanlw.db.lock.config;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
@@ -14,7 +14,6 @@ import javax.sql.DataSource;
  * @create 2018/8/27
  */
 @Configuration
-
 public class DataSourceConfig {
 
     private final Environment environment;
@@ -38,6 +37,7 @@ public class DataSourceConfig {
         hikariConfig.addDataSourceProperty("cachePrepStmts", environment.getProperty("datasource.cachePrepStmts"));
         hikariConfig.addDataSourceProperty("prepStmtCacheSize", environment.getProperty("datasource.prepStmtCacheSize"));
         hikariConfig.addDataSourceProperty("prepStmtCacheSqlLimit", environment.getProperty("datasource.prepStmtCacheSqlLimit"));
+        hikariConfig.setAutoCommit(false);
         return new HikariDataSource(hikariConfig);
     }
 

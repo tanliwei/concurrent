@@ -1,13 +1,14 @@
 package cn.tanlw.db.lastInsertId;
 
-import cn.tanlw.db.lastInsertId.target.SequenceUtil;
+import cn.tanlw.db.lastInsertId.target.LastInsertIdUtil;
 import cn.tanlw.db.lastInsertId.config.DataSourceConfig;
+import cn.tanlw.db.lastInsertId.target.LastInsertIdUtil2;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.concurrent.CountDownLatch;
 
 /**
- * 100个连接并发,测试未关闭resultSet、statement的情况
+ * 100个连接并发,测试未关闭resultSet、statement的情况(LastInsertIdUtil , 正确 LastInsertIdUtil2)
  * 最大连接数设置为10
  * Exception：
  *  java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30002ms.
@@ -40,7 +41,7 @@ public class TestInsertId {
         public void run() {
             try {
                 latch.await();
-                System.out.println("result:"+ SequenceUtil.getPrimaryId(dataSourceConfig.dataSource(), "a")+"Thread name:"+Thread.currentThread().getName());
+                System.out.println("result:"+ LastInsertIdUtil.getPrimaryId(dataSourceConfig.dataSource(), "a")+"Thread name:"+Thread.currentThread().getName());
 
             } catch (InterruptedException e) {
                 e.printStackTrace();

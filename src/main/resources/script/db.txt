@@ -1,0 +1,11 @@
+CREATE DATABASE `test` ;
+
+USE `test`
+/*Table structure for table `test` */
+
+DROP TABLE IF EXISTS `test`;
+
+CREATE TABLE `test` (
+  `name` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`name`)
+) ENGINE=INNODB DEFAULT CHARSET=utf8;

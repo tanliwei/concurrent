@@ -1,7 +1,7 @@
 package cn.tanlw.db.lock;
 
 import java.sql.SQLException; /**
- * @author liwei.tan@baozun.com
+ * @author liwei.tan
  * @Date 2018/9/29 9:52
  */
 public class JobPersistenceException extends Exception {

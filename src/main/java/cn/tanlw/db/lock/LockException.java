@@ -1,7 +1,7 @@
 package cn.tanlw.db.lock;
 
 /**
- * @author liwei.tan@baozun.com
+ * @author liwei.tan
  * @Date 2018/9/28 21:00
  */
 public class LockException extends RuntimeException{

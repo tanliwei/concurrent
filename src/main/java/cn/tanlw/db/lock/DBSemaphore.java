@@ -11,7 +11,7 @@ import java.util.HashSet;
 
 /**
  * TODO 自带可重入锁功能
- * @author liwei.tan@baozun.com
+ * @author liwei.tan
  * @Date 2018/9/28 20:47
  */
 

@@ -11,7 +11,7 @@ import java.util.concurrent.CountDownLatch;
  *
  * TODO 模拟死锁情况
  * TODO 第一个线程插入记录获得锁和第二个for update互斥锁，可能并发。
- * @author liwei.tan@baozun.com
+ * @author liwei.tan
  * @Date 2018/9/29 9:48
  */
 public class DBSemaphoreTest2 {

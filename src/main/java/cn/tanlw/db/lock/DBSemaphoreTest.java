@@ -10,7 +10,7 @@ import java.util.concurrent.CountDownLatch;
 /**
  *
 
- * @author liwei.tan@baozun.com
+ * @author liwei.tan
  * @Date 2018/9/29 9:48
  */
 public class DBSemaphoreTest {

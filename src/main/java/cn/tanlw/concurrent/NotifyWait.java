@@ -3,7 +3,7 @@ package cn.tanlw.concurrent;
 import static cn.tanlw.concurrent.NotifyWait.sigLock;
 
 /**
- * @author liwei.tan@baozun.com
+ * @author liwei.tan
  * @Date 2018/9/28 16:48
  */
 public class NotifyWait {
